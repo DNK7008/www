@@ -1,17 +1,25 @@
+***
 # My CV #
+***
 ### Name and surname
 Soroko Denis
+***
 ### Contacts for communication
-phone number: +375(29) 6974675;
-telegram name: it_dnk
+
+* phone number: +375(29) 6974675;
+* telegram name: it_dnk
+***
 ### Information about me
-I am 30. I work as an engineer, I want to study the skills of a WEB developer, and in the future to engage in this activity. We advised to start with Rolling Scopes School. I learned about Rolling Scopes School from friends, I liked the presentation of the material, the emphasis on practice and motivation, I decided to go towards my goal with your help. I'm sure everything will work out!
+
+* I am 30. I work as an engineer, I want to study the skills of a WEB developer, and in the future to engage in this activity. We advised to start with Rolling Scopes School. I learned about Rolling Scopes School from friends, I liked the presentation of the material, the emphasis on practice and motivation, I decided to go towards my goal with your help. I'm sure everything will work out!
+***
 ### Skills
 * HTML;
 * CSS; 
 * SASS; 
 * PHP; 
 * GIT
+***
 ### Code examples
 ``` PHP 
 <?php
@@ -48,10 +56,13 @@ $query_write = mysqli_query($db, "INSERT INTO `products` (`id`, `name`, `descrip
         echo '<table border="1">' . $tableData . '</table>';
     }
 ```
+***
 ### Experience
-No work experience at the moment
+* No work experience at the moment
+***
 ### Education
 * higher education, engineer, management specialist
 * took PHP courses from Brain Force
+***
 ### English language
-Beginner (A1)
+* Beginner (A1)
