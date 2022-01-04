@@ -15,7 +15,7 @@
 * PHP; 
 * GIT
 ### Code examples
-```PHP 
+```
 <?php
 foreach ($_POST as $post=>$value ) {
 $$post = $value;
@@ -44,7 +44,7 @@ $tableData = '<tr>
         }
 
     echo '<table border="1">' . $tableData . '</table>';
-} 
+}
 ```
 
 ### Experience
