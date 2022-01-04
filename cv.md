@@ -15,11 +15,11 @@
 * PHP; 
 * GIT
 ### Code examples
-``` PHP 
+```PHP 
 <?php
 
 foreach ($_POST as $post=>$value ) {
-    $$post = $value;
+$$post = $value;
 }
 
 $db = mysqli_connect('localhost', 'root', 'root', 'db_wayup' );
