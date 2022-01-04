@@ -17,29 +17,25 @@
 ### Code examples
 ```PHP 
 <?php
-
 foreach ($_POST as $post=>$value ) {
 $$post = $value;
 }
-
 $db = mysqli_connect('localhost', 'root', 'root', 'db_wayup' );
-
 if (!$db) {
     die('Error connect DB');
 }
-
-$query_write = mysqli_query($db, "INSERT INTO `products` (`id`, `name`, `description`, `category_id`, `price`) VALUES (NULL, '$name', '$description', '$category_id', '$price')");
-    if (!$query_write) {
-        echo 'Ошибка записи в БД';
-    } else {
-        echo 'Данные записаны в БД' . '<br><br>';
-        $tableData = '<tr>
+$query_write = mysqli_query($db, "INSERT INTO products (id, name, description, category_id, price) VALUES (NULL, '$name', '$description', '$category_id', '$price')");
+if (!$query_write) {
+echo 'Ошибка записи в БД';
+} else {
+echo 'Данные записаны в БД' . '<br><br>';
+$tableData = '<tr>
                         <td>ИМЯ</td>
                         <td>ОПИСАНИЕ</td>
                         <td>КАТЕГОРИЯ</td>
                         <td>ЦЕНА</td>
                       </tr>';
-        $query_selects = mysqli_query($db, "SELECT * FROM `products`");
+        $query_selects = mysqli_query($db, "SELECT * FROM products");
         while ($product = mysqli_fetch_assoc($query_selects)) {
             $tableData .= '<tr><td>' . $product['name'] . '</td>' .
                 '<td>' . $product['description'] . '</td>' .
@@ -47,8 +43,8 @@ $query_write = mysqli_query($db, "INSERT INTO `products` (`id`, `name`, `descrip
                 '<td>' . $product['price'];
         }
 
-        echo '<table border="1">' . $tableData . '</table>';
-    } 
+    echo '<table border="1">' . $tableData . '</table>';
+} 
 ```
 
 ### Experience
