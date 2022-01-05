@@ -52,4 +52,4 @@ $tableData = '<tr>
 * higher education, engineer, management specialist
 * took PHP courses from Brain Force
 ### English language
-* Beginner (A2)
+* Beginner (A1)
