@@ -7,7 +7,7 @@
   src: url("assets/fonts/Roboto.ttf");
 }
 
-.body {
+body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
