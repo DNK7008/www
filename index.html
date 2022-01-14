@@ -29,44 +29,90 @@
     </div>
   </header>
   <main class="main">
-    <div class="container">
-      <section class="section" id="profile">
-        <img src="assets/img/z_70f1ad8f.jpg" alt="MyFoto" class="section-foto">
-        <h1 class="section-name">Soroko Denis</h1>
-        <p>Junior frontend devoloper</p>
+    <div class="container main-container">
+      <section class="section section-profile" id="profile">
+        <img src="assets/img/z_70f1ad8f.jpg" alt="MyFoto" class="section-profile-foto">
+        <h1 class="section-title section-title-name">Soroko Denis</h1>
+        <p class="section-profile-profession">Junior frontend devoloper</p>
       </section>
-      <section class="section" id="contacts">
-
-        <h3 class="section-contacts">Contacts</h3>
-        * phone number: +375(29) 6974675;
-        * telegram name: it_dnk
+      <section class="section sections-contacts" id="contacts">
+        <h3 class="section-title section-title-contacts">Contacts</h3>
+        <ul class="section-contacts-list">
+          <li class="contacts-item">phone number: +375(29) 6974675</li>
+          <li class="contacts-item">telegram name: it_dnk</li>
+          <li class="contacts-item">GITHUB: <a class="link" href="https://github.com/DNK7008">DNK7008</a></li>
+        </ul>
       </section>
-      <section class="section" id="summary">
-        Summary
+      <section class="section section-summary" id="summary">
+        <h3 class="section-title">Summary</h3>
+        <p class="section-summary-about">
+          I am 30. I work as an engineer, I want to study the skills of a WEB developer, and in the future to engage in
+          this
+          activity. We advised to start with Rolling Scopes School. I learned about Rolling Scopes School from friends,
+          I liked
+          the presentation of the material, the emphasis on practice and motivation, I decided to go towards my goal
+          with your
+          help. I'm sure everything will work out!
+        </p>
       </section>
-      <section class="section" id="skills">
-        Skills
+      <section class="section section-skills" id="skills">
+        <h3 class="section-title">Skills</h3>
+        <ul class="section-skills-list">
+          <li class="skills-item">HTML</li>
+          <li class="skills-item">CSS</li>
+          <li class="skills-item">SASS</li>
+          <li class="skills-item">PHP</li>
+          <li class="skills-item">GIT</li>
+        </ul>
       </section>
-      <section class="section" id="code">
-        Code
+      <section class="section section-code" id="code">
+        <h3 class="section-title">Code</h3>
+        <pre>
+        <p class="section-code-example-1">
+          <code>
+            foreach ($_POST as $post=>$value ) {
+            $$post = $value;
+            }
+            $db = mysqli_connect('localhost', 'root', 'root', 'db_wayup' );
+            if (!$db) {
+            die('Error connect DB');
+            }
+            $query_write = mysqli_query($db, "INSERT INTO products (id, name, description, category_id, price) VALUES (NULL,
+            '$name', '$description', '$category_id', '$price')");
+            if (!$query_write) {
+            echo 'Ошибка записи в БД';
+            } else {
+            echo 'Данные записаны в БД';
+            
+            $query_selects = mysqli_query($db, "SELECT * FROM products");
+            while ($product = mysqli_fetch_assoc($query_selects)) {
+            
+                }
+                echo $tableData;
+                }
+            </code> 
+        </p>
+        </pre>
       </section>
-      <section class="section" id="courses">
-        Courses
+      <section class="section section-education" id="education">
+        <h2 class="sectinon section-education">Courses</h2>
+        <ul class="section-education-link">
+          <li class="education-item">higher education, engineer, management specialist</li>
+          <li class="education-item">took PHP courses from Brain Force</li>
+        </ul>
       </section>
-      <section class="section" id="projects">
-        Projects
+      <section class="section section-projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-project-list">at the moment I have no completed projects</p>
       </section>
-      <section class="section" id="education">
-        Education
-      </section>
-      <section class="section" id="english">
-        English
+      <section class="section section-english" id="english">
+        <h2 class="section-title">English</h2>
+        <p class="section-english-skill">Beginner (A1)</p>
       </section>
     </div>
   </main>
   <footer class="footer">
     <div class="container">
-
     </div>
   </footer>
 </body>
