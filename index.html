@@ -15,6 +15,8 @@
   <header class="header">
     <div class="container">
       <nav class="nav-header">
+        <a href="https://rs.school/js/" class="nav-link"><img src="assets/img/rsschool.png" alt="rsschool"
+            width="100"></a>
         <ul class="nav-list">
           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
           <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
@@ -31,14 +33,14 @@
   <!-- Инфо -->
   <main class="main">
     <div class="container main-container">
-      <section class="section-profile" id="profile">
-        <img src="assets/img/z_70f1ad8f.jpg" alt="MyFoto" class="section-profile-foto">
+      <section class="section section-profile" id="profile">
+        <img src="assets/img/z_70f1ad8f.jpg" alt="MyFoto" class="section-profile-foto" height="500">
         <div class="wrapper-profile">
-        <h1 class="section-title section-title-name">Soroko Denis</h1>
-        <p class="section-profile-profession">Junior frontend devoloper</p>
+          <h1 class="section-title section-title-name">Soroko Denis</h1>
+          <p class="section-profile-profession">Junior frontend devoloper</p>
         </div>
       </section>
-      <section class="section sections-contacts" id="contacts">
+      <section class="section section-contacts" id="contacts">
         <h3 class="section-title section-title-contacts">Contacts</h3>
         <ul class="section-contacts-list">
           <li class="contacts-item">phone number: +375(29) 6974675</li>
@@ -70,31 +72,31 @@
       </section>
       <section class="section section-code" id="code">
         <h3 class="section-title">Code</h3>
-        <pre>
-        <p class="section-code-example-1">
+        <pre class="section-code-example-1">
           <code>
             foreach ($_POST as $post=>$value ) {
             $$post = $value;
             }
-            $db = mysqli_connect('localhost', 'root', 'root', 'db_wayup' );
+            $db = mysqli_connect('localhost', 'root', 'root', 
+            'db_wayup' );
             if (!$db) {
             die('Error connect DB');
             }
-            $query_write = mysqli_query($db, "INSERT INTO products (id, name, description, category_id, price) VALUES (NULL,
-            '$name', '$description', '$category_id', '$price')");
+            $query_write = mysqli_query($db, "INSERT INTO 
+            products (id, name, description, category_id, price) 
+            VALUES 
+            (NULL,'$name', '$description', 
+            '$category_id', '$price')");
             if (!$query_write) {
             echo 'Ошибка записи в БД';
             } else {
             echo 'Данные записаны в БД';
             
-            $query_selects = mysqli_query($db, "SELECT * FROM products");
-            while ($product = mysqli_fetch_assoc($query_selects)) {
-            
-                }
+            $query_selects = mysqli_query($db, "SELECT * 
+            FROM products");
+            while ($product = mysqli_fetch_assoc($query_selects)) 
                 echo $tableData;
-                }
             </code> 
-        </p>
         </pre>
       </section>
       <section class="section section-courses" id="courses">
@@ -103,7 +105,7 @@
           <li class="courses-item">took PHP courses from Brain Forcet</li>
         </ul>
       </section>
-      <section class="section section-projects" id="projects">
+      <section class="section section-project" id="projects">
         <h2 class="section-title">Projects</h2>
         <p class="section-project-list">at the moment I have no completed projects</p>
       </section>
@@ -122,7 +124,15 @@
   </main>
   <footer class="footer">
     <div class="container">
-      
+      <nav class="footer-nav">
+        <div class="wrapper-footer">
+          <span class="year">2022</span>
+          <a href="https://github.com/DNK7008" class="footer-nav-link link">DNK7008</a>
+        </div>
+        <!-- .wrapper-footer -->
+        <a href="https://rs.school/js/" class="footer-nav-link"><img src="assets/img/rsschool.png" alt="rsschool"
+            width="100"></a>
+      </nav>
     </div>
   </footer>
 </body>

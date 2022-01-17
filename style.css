@@ -32,6 +32,12 @@ body {
   background-color: #f1f1f1;
 }
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -60,27 +66,27 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section-profile {
-  height: 500px;
   display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
 }
 
 .wrapper-profile {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section {
+  padding: 40px;
   width: 50%;
 }
 
-
-
-
-
-
 .section-title {
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -88,21 +94,71 @@ body {
   color: #000000;
 }
 
-  
 
-  
+.section-contacts-list {
+ list-style: none;
+ background-color: #f1f1f1; 
+}
 
-  /* .link {
+.link {
   text-decoration: none;
-  color: #829985;
+  color: rgb(47, 199, 16);
   transition: color 0.5s;
 }
 
 .link:hover {
   color: #5d7260;
-} */
+}
 
+.section-summary-about {
+  background-color: #f1f1f1; 
+}
 
+.section-skills-list {
+  list-style: none;
+  background-color: #f1f1f1; 
+}
+
+.section-code-example-1 {
+  background-color: #f1f1f1;
+}
+
+.section-courses-link {
+  list-style: none;
+ background-color: #f1f1f1; 
+}
+
+.section-project-list {
+  background-color: #f1f1f1; 
+}
+
+.section-education-link {
+  background-color: #f1f1f1; 
+  list-style: none;
+}
+
+.section-english-skill {
+  background-color: #f1f1f1; 
+}
+
+.footer {
+  padding: 22px 0;
+  background-color: #f1f1f1;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.year {
+  font-weight: bold;
+
+}
+
+.footer-nav-link {
+  margin: 10px;
+}
 
 @media (max-width: 768px) {
   .section {
