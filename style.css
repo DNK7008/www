@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth; 
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  padding: 22px 0;
+  background-color: #f1f1f1;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  
+}
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; 
+  }
+
+  .nav-link {
+    margin-left: 11px;
+    margin-right: 11px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none; 
+  }
+
+   .nav-link:hover {
+    font-weight: bold;
+  }
+    
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+
+.wrapper-profile {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  padding: 40px;
+  width: 50%;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+
+.section-contacts-list {
+ list-style: none;
+ background-color: #f1f1f1; 
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(47, 199, 16);
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #5d7260;
+}
+
+.section-summary-about {
+  background-color: #f1f1f1; 
+}
+
+.section-skills-list {
+  list-style: none;
+  background-color: #f1f1f1; 
+}
+
+.section-code-example-1 {
+  background-color: #f1f1f1;
+}
+
+.section-courses-link {
+  list-style: none;
+ background-color: #f1f1f1; 
+}
+
+.section-project-list {
+  background-color: #f1f1f1; 
+}
+
+.section-education-link {
+  background-color: #f1f1f1; 
+  list-style: none;
+}
+
+.section-english-skill {
+  background-color: #f1f1f1; 
+}
+
+.footer {
+  padding: 22px 0;
+  background-color: #f1f1f1;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.year {
+  font-weight: bold;
+}
+
+.footer-nav-link {
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
