@@ -149,11 +149,11 @@ body {
 .footer-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .year {
   font-weight: bold;
-
 }
 
 .footer-nav-link {
